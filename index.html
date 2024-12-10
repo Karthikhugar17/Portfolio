@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Hugar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="photo-container">
+            <img src="c:\Users\Karthik Hugar\OneDrive\Documents\myphoto.jpg" alt="Karthik Hugar" class="profile-photo">
+        </div>
+        <h1>Karthik Hugar</h1>
+        <p>Web Developer | Software Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Hello! I'm Karthik Hugar, a Computer Science student with a passion for web and software development. My goal is to build impactful digital experiences.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="slide-in">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.E. in Computer Science & Engineering</strong>  
+                <br> CMR Institute of Technology, Bengaluru  
+                <br> CGPA: 8.47 (Expected 2026)
+            </li>
+            <li><strong>12th Grade (Science)</strong>  
+                <br> Sri VidyaNiketan PU College, Gangavathi  
+                <br> Percentage: 92.6% (2022)
+            </li>
+            <li><strong>10th Grade</strong>  
+                <br> Swamy Vivekananda Public School, Sriramnagar  
+                <br> Percentage: 96.67% (2020)
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><button onclick="showPopup('car')">Car Showroom Website</button></li>
+            <li><button onclick="showPopup('todo')">To-Do List App</button></li>
+            <li><button onclick="showPopup('hotel')">Hotel Management System</button></li>
+        </ul>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships">
+        <h2>Internship</h2>
+        <button onclick="showPopup('internship')">Details about Internship</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="https://github.com/Karthikhugar17" target="_blank">
+                <img src="c:\Users\Karthik Hugar\Downloads\github.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/karthik-hugar027" target="_blank">
+                <img src="c:\Users\Karthik Hugar\Downloads\linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/918088140556" target="_blank">
+                <img src="c:\Users\Karthik Hugar\Downloads\whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Karthik Hugar. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
